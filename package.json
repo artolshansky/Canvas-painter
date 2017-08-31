@@ -1,0 +1,24 @@
+{
+  "name": "canvas-painter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olshansky/Canvas-painter.git"
+  },
+  "author": "https://github.com/olshansky/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olshansky/Canvas-painter/issues"
+  },
+  "homepage": "https://github.com/olshansky/Canvas-painter#readme",
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
+}

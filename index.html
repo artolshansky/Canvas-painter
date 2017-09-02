@@ -3,10 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="build/index.js"></script>
+    <style>
+      form {
+        display: table;
+      }
+      form > p {
+        display: table-row;
+      }
+      label, input {
+        display: table-cell;
+        margin: 5px;
+      }
+      canvas {
+        border: 1px solid black;
+        margin-top: 10px;
+      }
+    </style>
     <title>HTML5 Canvas paint</title>
   </head>
   <body>
+    <form action="" id="options">
+      <p>
+        <label for="size"> size: </label>
+          <input type="range" min="1" max="50" step="1" value="1" id="size" name="size" />
+      </p>
+      <p>
+        <label for="color"> color: </label>
+          <input type="color" id="color" name="color" />
+      </p>
+      <p>
+        <label for="clear"> </label>
+        <input type="button" id="clear" name="clear" value="Clear canvas" />
+      </p>
+      <p>
+        <label for="canvas-width"> canvas-width: </label>
+          <input type="number" id="canvas-width" name="canvas-width" placeholder="400"/>
+      </p>
+      <p>
+        <label for="canvas-height"> canvas-height: </label>
+          <input type="number" id="canvas-height" name="canvas-height" placeholder="400"/>
+      </p>
+    </form>
+    <canvas id="canvas" width="400" height="400" style=""></canvas>
 
     <script type="text/javascript" src="build/index.js"></script>
   </body>

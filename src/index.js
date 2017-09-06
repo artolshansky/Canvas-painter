@@ -39,7 +39,7 @@ import Painter from './Painter';
     draw(e);
   })
 
-  canvas.addEventListener('mouseup', e => {
+  document.addEventListener('mouseup', e => {
     painter.stop();
   })
 
